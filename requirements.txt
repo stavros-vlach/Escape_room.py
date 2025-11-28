@@ -1,13 +1,12 @@
-# Python dependencies for Escape Room - LLM Version
-# For template version (puzzle.py), no dependencies needed!
+# Core Dependencies
+openai>=1.0.0
+python-dotenv>=1.0.0
 
-# Core LLM libraries
-transformers>=4.30.0
-torch>=2.0.0
-accelerate>=0.20.0
+# LangChain Dependencies (for langchain_agent.py)
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
 
-# Optional: For faster CPU inference
-# sentencepiece>=0.1.99
-
-# Note: First run will download ~15GB Mistral-7B model
-# Model will be cached in ~/.cache/huggingface/
+# Additional Dependencies
+typing-extensions>=4.0.0
